@@ -1,0 +1,257 @@
+.page-header {
+  background: linear-gradient(135deg, var(--primary-brown) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 40px 0;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .page-header p {
+    font-size: 16px;
+  }
+}
+
+/* Shop Layout */
+.shop-section {
+  background-color: var(--bg-light);
+}
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 40px;
+}
+
+.filters {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  height: fit-content;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filters h3 {
+  font-size: 20px;
+  color: var(--primary-brown);
+  margin-bottom: 25px;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.filter-group:last-child {
+  border-bottom: none;
+}
+
+.filter-group h4 {
+  font-size: 14px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.filter-options input[type="radio"] {
+  cursor: pointer;
+  accent-color: var(--primary-brown);
+}
+
+.filter-group input[type="range"] {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.filter-group p {
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.products-section {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: var(--border-radius);
+}
+
+.products-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.products-header p {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.no-products {
+  grid-column: 1 / -1;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+@media (max-width: 1024px) {
+  .shop-layout {
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    grid-column: 1 / -1;
+  }
+
+  .products-section {
+    padding: 20px 0;
+    background-color: transparent;
+  }
+}
+
+/* Wholesale Section */
+.wholesale-section {
+  background-color: var(--white);
+}
+
+.wholesale-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.wholesale-content p {
+  color: var(--text-light);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.wholesale-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  padding: 20px;
+}
+
+.feature .icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.feature h4 {
+  color: var(--primary-brown);
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Quality Guarantee */
+.quality-guarantee {
+  background-color: var(--bg-light);
+}
+
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.guarantee-item {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.guarantee-item h3 {
+  color: var(--primary-brown);
+  margin-bottom: 12px;
+}
+
+.guarantee-item p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Shipping Section */
+.shipping-section {
+  background-color: var(--white);
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.policy-item {
+  background-color: var(--bg-light);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.policy-item h3 {
+  color: var(--primary-brown);
+  margin-bottom: 15px;
+}
+
+.policy-item p {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.policy-item strong {
+  color: var(--text-dark);
+}

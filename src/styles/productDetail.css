@@ -1,0 +1,271 @@
+/*Product Detail Styles */
+.product-detail-section {
+  padding: 40px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: var(--primary-brown);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.back-link:hover {
+  color: var(--accent-gold);
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.product-image-large {
+  position: relative;
+}
+
+.product-image-large img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.roast-badge-large {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--accent-gold);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.product-details-info h1 {
+  font-size: 36px;
+  color: var(--primary-brown);
+  margin-bottom: 12px;
+}
+
+.origin-large {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.rating-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.stars {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.reviews {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.description-section,
+.flavor-profile,
+.brewing-recommendations,
+.roast-level-info {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.description-section:last-of-type {
+  border-bottom: none;
+}
+
+.product-details-info h3 {
+  font-size: 18px;
+  color: var(--primary-brown);
+  margin-bottom: 15px;
+}
+
+.product-details-info p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.flavor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flavor-tag {
+  background-color: var(--bg-light);
+  color: var(--primary-brown);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.roast-indicator {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.roast-bar {
+  height: 4px;
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.roast-bar.light {
+  background-color: #F5DEB3;
+}
+
+.roast-bar.light.active {
+  background-color: #FFD700;
+  height: 6px;
+}
+
+.roast-bar.medium {
+  background-color: #D2B48C;
+}
+
+.roast-bar.medium.active {
+  background-color: #8B4513;
+  height: 6px;
+}
+
+.roast-bar.dark {
+  background-color: #654321;
+}
+
+.roast-bar.dark.active {
+  background-color: #2F1F0F;
+  height: 6px;
+}
+
+.purchase-section {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 30px;
+}
+
+.weight-selection {
+  margin-bottom: 30px;
+}
+
+.weight-options-large {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.weight-btn {
+  padding: 10px 18px;
+  border: 2px solid var(--primary-brown);
+  background-color: var(--white);
+  color: var(--primary-brown);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.weight-btn:hover,
+.weight-btn.active {
+  background-color: var(--primary-brown);
+  color: var(--white);
+}
+
+.price-and-buy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price-large {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-brown);
+}
+
+.related-products {
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.product-card-small {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.product-card-small:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card-small img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+}
+
+.product-card-small h4 {
+  color: var(--primary-brown);
+  margin-bottom: 8px;
+}
+
+.product-card-small .origin {
+  color: var(--text-light);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.product-card-small .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-brown);
+  margin-bottom: 15px;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .product-detail {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .product-details-info h1 {
+    font-size: 28px;
+  }
+
+  .price-and-buy {
+    flex-direction: column;
+  }
+
+  .price-and-buy button {
+    width: 100%;
+  }
+}
