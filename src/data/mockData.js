@@ -11,7 +11,7 @@ export const coffeeProducts = [
     description:
       "A delicate and complex Ethiopian coffee with bright acidity and fruity notes.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=500&h=500&fit=crop",
     brewingRecommendations: "Pour over or AeroPress for best results",
   },
   {
@@ -25,7 +25,7 @@ export const coffeeProducts = [
     description:
       "A balanced medium roast with smooth chocolate and nutty flavors.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&h=500&fit=crop",
     brewingRecommendations: "Espresso or drip coffee",
   },
   {
@@ -38,7 +38,7 @@ export const coffeeProducts = [
     weights: [250, 500, 1000],
     description: "A bold dark roast with earthy undertones and rich body.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&h=500&fit=crop",
     brewingRecommendations: "French press or espresso",
   },
   {
@@ -51,7 +51,7 @@ export const coffeeProducts = [
     weights: [250, 500, 1000],
     description: "Premium grade coffee with distinctive berry and wine notes.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop",
     brewingRecommendations: "Pour over or filter coffee",
   },
   {
@@ -64,7 +64,7 @@ export const coffeeProducts = [
     weights: [250, 500, 1000],
     description: "Full-bodied with earthy and spicy characteristics.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1485808191679-5f86510bd9d7?w=500&h=500&fit=crop",
     brewingRecommendations: "French press or Moka pot",
   },
   {
@@ -77,7 +77,7 @@ export const coffeeProducts = [
     weights: [250, 500, 1000],
     description: "A smooth blend with bright citrus and creamy cocoa finish.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1518057111178-44a106bad636?w=500&h=500&fit=crop",
     brewingRecommendations: "Espresso or pour over",
   },
 ];
@@ -101,7 +101,7 @@ export const trainingPrograms = [
     ],
     whoItsFor: "Coffee enthusiasts with no prior experience",
     image:
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=400&fit=crop",
   },
   {
     id: 2,
@@ -121,7 +121,7 @@ export const trainingPrograms = [
     ],
     whoItsFor: "Experienced coffee makers or Barista course graduates",
     image:
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=500&h=400&fit=crop",
   },
   {
     id: 3,
@@ -140,7 +140,7 @@ export const trainingPrograms = [
     ],
     whoItsFor: "Professional baristas seeking certification or expertise",
     image:
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=500&h=400&fit=crop",
   },
 ];
 
@@ -260,7 +260,7 @@ export const blogPosts = [
     date: "2026-02-20",
     category: "Brewing Guides",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=500&h=300&fit=crop",
     excerpt:
       "Learn the science behind perfect espresso shots and how small adjustments make a big difference.",
     content: `Espresso extraction is both art and science. The perfect shot requires proper grind size, tamping pressure, water temperature, and timing.
@@ -281,7 +281,7 @@ Master these fundamentals and you'll be making café-quality espresso at home.`,
     date: "2026-02-15",
     category: "Bean Origins",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1469957761306-556935073eba?w=500&h=300&fit=crop",
     excerpt:
       "Discover the rich history and unique flavor profiles of Ethiopian Yirgacheffe and Sidamo coffees.",
     content: `Ethiopia is the birthplace of coffee. The country's mountainous regions produce some of the world's most unique and prized coffee beans.

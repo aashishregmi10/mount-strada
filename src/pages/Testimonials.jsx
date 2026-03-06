@@ -8,8 +8,8 @@ export default function Testimonials() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Testimonials</h1>
-          <p>What our customers and students say about us</p>
+          <h1>⭐ Testimonials</h1>
+          <p>What our customers and students say about us ❤️</p>
         </div>
       </section>
 

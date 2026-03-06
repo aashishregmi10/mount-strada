@@ -7,15 +7,15 @@ export default function About() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>About Mount Strada</h1>
-          <p>Our Story, Mission, and Vision</p>
+          <h1>☕ About Mount Strada</h1>
+          <p>Our Story, Mission, and Vision 🌟</p>
         </div>
       </section>
 
       {/* Company Story */}
       <section className="section story-section">
         <div className="container">
-          <h2 className="section-title">Our Story</h2>
+          <h2 className="section-title">📝 Our Story</h2>
           <div className="story-content">
             <p>
               Mount Strada was founded in {companyInfo.foundedYear} with a
@@ -62,7 +62,7 @@ export default function About() {
       {/* Core Values */}
       <section className="section values-section">
         <div className="container">
-          <h2 className="section-title">Our Core Values</h2>
+          <h2 className="section-title">💞 Our Core Values</h2>
           <div className="values-grid">
             <div className="value-item">
               <span className="value-icon">☕</span>
@@ -101,7 +101,7 @@ export default function About() {
       {/* Team */}
       <section className="section team-section">
         <div className="container">
-          <h2 className="section-title">Meet Our Team</h2>
+          <h2 className="section-title">👥 Meet Our Team</h2>
           <div className="team-grid">
             {teamMembers.map((member) => (
               <div key={member.id} className="team-member">
@@ -126,7 +126,9 @@ export default function About() {
       {/* Certifications */}
       <section className="section certifications-section">
         <div className="container">
-          <h2 className="section-title">Our Certifications & Affiliations</h2>
+          <h2 className="section-title">
+            🏅 Our Certifications & Affiliations
+          </h2>
           <div className="certifications-list">
             {companyInfo.certifications.map((cert, idx) => (
               <div key={idx} className="certification-item">
@@ -141,7 +143,7 @@ export default function About() {
       {/* Timeline */}
       <section className="section timeline-section">
         <div className="container">
-          <h2 className="section-title">Our Journey</h2>
+          <h2 className="section-title">📈 Our Journey</h2>
           <div className="timeline">
             {timeline.map((event, idx) => (
               <div key={idx} className="timeline-item">
@@ -159,10 +161,19 @@ export default function About() {
       {/* Facility */}
       <section className="section facility-section">
         <div className="container">
-          <h2 className="section-title">Our Facility</h2>
+          <h2 className="section-title">🏢 Our Facility</h2>
           <div className="facility-content">
             <div className="facility-image">
-              <div className="image-placeholder">📍</div>
+              <img
+                src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&h=450&fit=crop"
+                alt="Mount Strada Facility"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "var(--border-radius)",
+                }}
+              />
             </div>
             <div className="facility-info">
               <h3>State-of-the-art Facilities</h3>

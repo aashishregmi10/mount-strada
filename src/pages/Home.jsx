@@ -20,8 +20,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Crafting Excellence, One Cup at a Time</h1>
-          <p>Premium Specialty Coffee & Professional Barista Training</p>
+          <h1>☕ Crafting Excellence, One Cup at a Time</h1>
+          <p>🌟 Premium Specialty Coffee & Professional Barista Training</p>
           <div className="hero-buttons">
             <Link to="/shop" className="btn btn-primary btn-large">
               Order Coffee Beans
@@ -38,7 +38,7 @@ export default function Home() {
         <div className="container">
           <div className="intro-content">
             <div className="intro-text">
-              <h2>Welcome to Mount Strada</h2>
+              <h2>🏠 Welcome to Mount Strada</h2>
               <p>
                 We are purveyors of the finest specialty coffee beans from
                 around the world, combined with professional barista training
@@ -71,7 +71,7 @@ export default function Home() {
       {/* Featured Products */}
       <section className="section featured-products">
         <div className="container">
-          <h2 className="section-title">Featured Coffee Beans</h2>
+          <h2 className="section-title">☕ Featured Coffee Beans</h2>
           <div className="grid grid-3">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -88,7 +88,7 @@ export default function Home() {
       {/* Training Programs Preview */}
       <section className="section training-preview">
         <div className="container">
-          <h2 className="section-title">Our Training Programs</h2>
+          <h2 className="section-title">🎓 Our Training Programs</h2>
           <div className="grid grid-3">
             {trainingPrograms.map((program) => (
               <TrainingCard key={program.id} program={program} />
@@ -105,7 +105,7 @@ export default function Home() {
       {/* Upcoming Batches */}
       <section className="section upcoming-batches">
         <div className="container">
-          <h2 className="section-title">Upcoming Training Batches</h2>
+          <h2 className="section-title">📅 Upcoming Training Batches</h2>
           <div className="batches-grid">
             {upcomingBatches.slice(0, 4).map((batch) => (
               <div key={batch.id} className="batch-card">
@@ -145,7 +145,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className="section testimonials">
         <div className="container">
-          <h2 className="section-title">What Our Customers Say</h2>
+          <h2 className="section-title">⭐ What Our Customers Say</h2>
           <div className="grid grid-3">
             {featuredTestimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
@@ -162,9 +162,16 @@ export default function Home() {
       {/* Instagram Gallery Preview */}
       <section className="section instagram-section">
         <div className="container">
-          <h2 className="section-title">Follow Us on Instagram</h2>
+          <h2 className="section-title">📸 Follow Us on Instagram</h2>
           <div className="instagram-grid">
-            {[...Array(6)].map((_, i) => (
+            {[
+              "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=300&h=300&fit=crop",
+            ].map((src, i) => (
               <a
                 key={i}
                 href={companyInfo.socialMedia.instagram}
@@ -172,7 +179,11 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="instagram-item"
               >
-                <div className="placeholder">📸</div>
+                <img
+                  src={src}
+                  alt={`Instagram post ${i + 1}`}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
               </a>
             ))}
           </div>
@@ -182,7 +193,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="section cta-section">
         <div className="container">
-          <h2>Ready to Experience Premium Coffee or Learn Barista Skills?</h2>
+          <h2>
+            Ready to Experience Premium Coffee or Learn Barista Skills? ☕
+          </h2>
           <p>Start your journey with Mount Strada today</p>
           <div className="cta-buttons">
             <Link to="/shop" className="btn btn-primary btn-large">

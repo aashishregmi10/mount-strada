@@ -2,20 +2,78 @@ import "../styles/gallery.css";
 
 export default function Gallery() {
   const galleryItems = [
-    { id: 1, category: "Beans", emoji: "☕", title: "Our Coffee Varieties" },
-    { id: 2, category: "Roasting", emoji: "🔥", title: "Roasting Process" },
-    { id: 3, category: "Training", emoji: "🎓", title: "Barista Training" },
-    { id: 4, category: "Facility", emoji: "🏢", title: "Our Facility" },
-    { id: 5, category: "Events", emoji: "🎉", title: "Events & Workshops" },
-    { id: 6, category: "Students", emoji: "👥", title: "Student Success" },
-    { id: 7, category: "Sourcing", emoji: "🌍", title: "Bean Sourcing" },
+    {
+      id: 1,
+      category: "Beans",
+      emoji: "☕",
+      title: "Our Coffee Varieties",
+      image:
+        "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=400&h=400&fit=crop",
+    },
+    {
+      id: 2,
+      category: "Roasting",
+      emoji: "🔥",
+      title: "Roasting Process",
+      image:
+        "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=400&h=400&fit=crop",
+    },
+    {
+      id: 3,
+      category: "Training",
+      emoji: "🎓",
+      title: "Barista Training",
+      image:
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop",
+    },
+    {
+      id: 4,
+      category: "Facility",
+      emoji: "🏢",
+      title: "Our Facility",
+      image:
+        "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=400&h=400&fit=crop",
+    },
+    {
+      id: 5,
+      category: "Events",
+      emoji: "🎉",
+      title: "Events & Workshops",
+      image:
+        "https://images.unsplash.com/photo-1531498352491-042fbae4cf57?w=400&h=400&fit=crop",
+    },
+    {
+      id: 6,
+      category: "Students",
+      emoji: "👥",
+      title: "Student Success",
+      image:
+        "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=400&fit=crop",
+    },
+    {
+      id: 7,
+      category: "Sourcing",
+      emoji: "🌍",
+      title: "Bean Sourcing",
+      image:
+        "https://images.unsplash.com/photo-1469957761306-556935073eba?w=400&h=400&fit=crop",
+    },
     {
       id: 8,
       category: "Ceremonies",
       emoji: "🏆",
       title: "Certificate Ceremonies",
+      image:
+        "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=400&h=400&fit=crop",
     },
-    { id: 9, category: "Community", emoji: "❤️", title: "Community" },
+    {
+      id: 9,
+      category: "Community",
+      emoji: "❤️",
+      title: "Community",
+      image:
+        "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=400&h=400&fit=crop",
+    },
   ];
 
   return (
@@ -23,23 +81,25 @@ export default function Gallery() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Gallery</h1>
-          <p>Explore our coffee journey through images and stories</p>
+          <h1>📸 Gallery</h1>
+          <p>Explore our coffee journey through images and stories ☕</p>
         </div>
       </section>
 
       {/* Gallery Grid */}
       <section className="section gallery-page-section">
         <div className="container">
-          <h2 className="section-title">Our Coffee Journey</h2>
+          <h2 className="section-title">📸 Our Coffee Journey</h2>
           <div className="gallery-grid-large">
             {galleryItems.map((item) => (
               <div key={item.id} className="gallery-item-large">
                 <div className="gallery-image">
-                  <div className="placeholder">{item.emoji}</div>
+                  <img src={item.image} alt={item.title} />
                 </div>
                 <div className="gallery-overlay">
-                  <p className="category">{item.category}</p>
+                  <p className="category">
+                    {item.emoji} {item.category}
+                  </p>
                   <h3>{item.title}</h3>
                 </div>
               </div>
@@ -51,7 +111,7 @@ export default function Gallery() {
       {/* Video Gallery Text */}
       <section className="section videos-section">
         <div className="container">
-          <h2 className="section-title">Video Content</h2>
+          <h2 className="section-title">🎬 Video Content</h2>
           <div className="videos-grid">
             <div className="video-item">
               <div className="video-placeholder">▶️</div>
@@ -75,7 +135,7 @@ export default function Gallery() {
       {/* Behind the Scenes */}
       <section className="section behind-scenes">
         <div className="container">
-          <h2 className="section-title">Behind the Scenes</h2>
+          <h2 className="section-title">🏭 Behind the Scenes</h2>
           <div className="behind-grid">
             <div className="behind-item">
               <div className="emoji-large">☕</div>

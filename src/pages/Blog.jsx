@@ -7,14 +7,15 @@ export default function Blog() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Coffee Blog & Resources</h1>
-          <p>Tips, guides, and stories from the coffee world</p>
+          <h1>📝 Coffee Blog & Resources</h1>
+          <p>Tips, guides, and stories from the coffee world ☕</p>
         </div>
       </section>
 
       {/* Blog Posts */}
       <section className="section blog-section">
         <div className="container">
+          <h2 className="section-title">📝 Latest Articles</h2>
           <div className="blog-grid">
             {blogPosts.map((post) => (
               <article key={post.id} className="blog-card">
@@ -41,7 +42,7 @@ export default function Blog() {
       {/* Featured Post */}
       <section className="section featured-post-section">
         <div className="container">
-          <h2 className="section-title">Featured Article</h2>
+          <h2 className="section-title">🔖 Featured Article</h2>
           <article className="featured-article">
             <img src={blogPosts[0].image} alt={blogPosts[0].title} />
             <div className="featured-content">
@@ -63,7 +64,7 @@ export default function Blog() {
       {/* Coffee Resources */}
       <section className="section resources-section">
         <div className="container">
-          <h2 className="section-title">Coffee Resources</h2>
+          <h2 className="section-title">📚 Coffee Resources</h2>
           <div className="resources-grid">
             <div className="resource-item">
               <h3>☕ Brewing Guides</h3>

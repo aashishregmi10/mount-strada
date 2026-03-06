@@ -44,8 +44,8 @@ export default function Shop() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Coffee Beans Shop</h1>
-          <p>Premium specialty coffee beans from around the world</p>
+          <h1>☕ Coffee Beans Shop</h1>
+          <p>Premium specialty coffee beans from around the world 🌍</p>
         </div>
       </section>
 

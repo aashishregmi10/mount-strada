@@ -14,8 +14,8 @@ export default function FAQ() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Frequently Asked Questions</h1>
-          <p>Find answers to common questions</p>
+          <h1>❓ Frequently Asked Questions</h1>
+          <p>Find answers to common questions 📚</p>
         </div>
       </section>
 

@@ -43,15 +43,15 @@ export default function Training() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Barista Training Programs</h1>
-          <p>Become an expert barista with our comprehensive training</p>
+          <h1>🎓 Barista Training Programs</h1>
+          <p>Become an expert barista with our comprehensive training ☕</p>
         </div>
       </section>
 
       {/* Program Overview */}
       <section className="section">
         <div className="container">
-          <h2 className="section-title">Our Programs</h2>
+          <h2 className="section-title">🎓 Our Programs</h2>
           <div className="grid grid-3">
             {trainingPrograms.map((program) => (
               <TrainingCard key={program.id} program={program} />
@@ -63,7 +63,7 @@ export default function Training() {
       {/* Trainer Profile */}
       <section className="section trainer-section">
         <div className="container">
-          <h2 className="section-title">Meet Our Head Trainers</h2>
+          <h2 className="section-title">👨‍🍳 Meet Our Head Trainers</h2>
           <div className="trainers-grid">
             {teamMembers.slice(0, 3).map((trainer) => (
               <div key={trainer.id} className="trainer-card">
@@ -88,7 +88,7 @@ export default function Training() {
       {/* Certification Details */}
       <section className="section certification-section">
         <div className="container">
-          <h2 className="section-title">Certification</h2>
+          <h2 className="section-title">🏅 Certification</h2>
           <div className="certification-content">
             <div className="cert-info">
               <h3>SCA Barista Certification</h3>
@@ -116,7 +116,7 @@ export default function Training() {
       {/* Upcoming Batches */}
       <section className="section batches-section">
         <div className="container">
-          <h2 className="section-title">Upcoming Batches</h2>
+          <h2 className="section-title">📅 Upcoming Batches</h2>
           <div className="batches-detailed">
             {upcomingBatches.map((batch) => (
               <div key={batch.id} className="batch-detailed-card">
@@ -167,13 +167,22 @@ export default function Training() {
       {/* Gallery */}
       <section className="section gallery-section">
         <div className="container">
-          <h2 className="section-title">Past Training Sessions</h2>
+          <h2 className="section-title">📸 Past Training Sessions</h2>
           <div className="gallery-grid">
-            {[...Array(6)].map((_, i) => (
+            {[
+              "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1531498352491-042fbae4cf57?w=300&h=300&fit=crop",
+              "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=300&h=300&fit=crop",
+            ].map((src, i) => (
               <div key={i} className="gallery-item">
-                <div className="gallery-placeholder">
-                  {i % 3 === 0 ? "☕" : i % 3 === 1 ? "🎓" : "📸"}
-                </div>
+                <img
+                  src={src}
+                  alt={`Training session ${i + 1}`}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
               </div>
             ))}
           </div>
@@ -183,7 +192,7 @@ export default function Training() {
       {/* Enrollment Form */}
       <section className="section enrollment-section">
         <div className="container">
-          <h2 className="section-title">Enroll Now</h2>
+          <h2 className="section-title">📝 Enroll Now</h2>
           <div className="enrollment-form-container">
             <form className="enrollment-form" onSubmit={handleSubmit}>
               <div className="form-group">

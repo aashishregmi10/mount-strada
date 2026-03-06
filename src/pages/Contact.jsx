@@ -36,8 +36,8 @@ export default function Contact() {
       {/* Page Header */}
       <section className="page-header">
         <div className="container">
-          <h1>Contact Us</h1>
-          <p>We'd love to hear from you</p>
+          <h1>📩 Contact Us</h1>
+          <p>We'd love to hear from you 😊</p>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ export default function Contact() {
           <div className="contact-layout">
             {/* Contact Form */}
             <div className="contact-form-container">
-              <h2>Send us a Message</h2>
+              <h2>💬 Send us a Message</h2>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="name">Name *</label>
